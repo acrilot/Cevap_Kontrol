@@ -1,11 +1,12 @@
 import tkinter as tk
 from tkinter import ttk, simpledialog, messagebox, filedialog
 import os
+from pathlib import Path
 import json
 import re
 
-DATA_DIR = r"C:\Users\ETHEM\AppData\Local\CevapAnahtariKontrol\data"
-os.makedirs(DATA_DIR, exist_ok=True)
+DATA_DIR = Path(os.getenv('LOCALAPPDATA')) / "CevapKontrol" / "data"
+DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 class AnswerEvaluator:
     def __init__(self):
