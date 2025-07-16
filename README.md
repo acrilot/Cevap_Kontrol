@@ -5,7 +5,7 @@ Sorular iki şekilde numaralandırılabilir, boşluklar işlemi etkilemez:\
 2\)\
 3\)
 
-veya \
+veya 
 
 1.\
 2.\
